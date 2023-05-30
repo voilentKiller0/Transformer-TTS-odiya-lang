@@ -51,7 +51,7 @@ def post_processed_reader(metadata_path: str, column_sep='|', upsample_indicator
 
 
 if __name__ == '__main__':
-    metadata_path = '/Volumes/data/datasets/LJSpeech-1.1/metadata.csv'
+    metadata_path = '/path/to/metadata.csv'
     d = get_preprocessor_by_name('ljspeech')(metadata_path)
     key_list = list(d.keys())
     print('metadata head')
